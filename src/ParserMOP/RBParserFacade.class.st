@@ -105,7 +105,7 @@ RBParserFacade >> initialize [
 	plugins := OrderedCollection new
 ]
 
-{ #category : #parsing }
+{ #category : #api }
 RBParserFacade >> parse: aString [ 
 	
 	| ast |
@@ -115,7 +115,7 @@ RBParserFacade >> parse: aString [
 	^ ast
 ]
 
-{ #category : #parsing }
+{ #category : #api }
 RBParserFacade >> parseExpression: aString [ 
 	
 	self beForExpression.
@@ -129,7 +129,7 @@ RBParserFacade >> parseFaultyMethod: aString [
 	^ self parseMethod: aString
 ]
 
-{ #category : #parsing }
+{ #category : #api }
 RBParserFacade >> parseLiterals: asd [
 
 	^ RBParser parseLiterals: asd
